@@ -78,7 +78,7 @@ var getresult = document.querySelector('.ketqua')
         var y = document.getElementById("txt_y").value;
         y = parseFloat(y);
         //3. tính toán
-        if(y>100000){
+        if(y>x){
             alert('Cược đúng số tiền mày có đi')
         }
         if(x<=0){
