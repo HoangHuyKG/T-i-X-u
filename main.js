@@ -5,11 +5,12 @@ var x = 100000;
 getButtontai.addEventListener ('click', function  (params) {
     tai = '<h1>Tài</h1>'
     getButtonxiu.style.display = 'none'
-
+    xui = ''
 })
 getButtonxiu.addEventListener ('click', function  (params) {
     xui = '<h1>Xỉu</h1>'
     getButtontai.style.display = 'none'
+    tai = ''
 })
 getagain.addEventListener ('click', function  (params) {
     getButtontai.style.display = 'inline-block'
