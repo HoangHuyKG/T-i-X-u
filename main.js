@@ -96,14 +96,13 @@ var getresult = document.querySelector('.ketqua')
             số tiền của bạn: ${x-=y}
             </p>`;
         }
-    }if(xui == '<h1>Xỉu</h1>'){
-
+    }
+        if(xui == '<h1>Xỉu</h1>'){
         if (xui == getresult.innerHTML){   
            document.querySelector('.tiencuaban').innerHTML = `<p class="tiencuaban">
            số tiền của bạn: ${x+=y}
            </p>`;
         } else {
-           
            document.querySelector('.tiencuaban').innerHTML = `<p class="tiencuaban">
            số tiền của bạn: ${x-=y}
            </p>`;
