@@ -1,4 +1,23 @@
+var getButtontai = document.querySelector('.tai')
+var getButtonxiu = document.querySelector('.xiu')
+var getagain = document.querySelector('.again')
+var x = 100000;
+getButtontai.addEventListener ('click', function  (params) {
+    tai = '<h1>Tài</h1>'
+    getButtonxiu.style.display = 'none'
 
+})
+getButtonxiu.addEventListener ('click', function  (params) {
+    xui = '<h1>Xỉu</h1>'
+    getButtontai.style.display = 'none'
+})
+getagain.addEventListener ('click', function  (params) {
+    getButtontai.style.display = 'inline-block'
+    getButtonxiu.style.display = 'inline-block'
+    tai = ''
+    xui = ''
+})
+// 
 var Click = document.querySelector('.clickme')
 var clickimg = document.querySelector('.xucxac')
 var getresult = document.querySelector('.ketqua')
@@ -45,13 +64,53 @@ var getresult = document.querySelector('.ketqua')
         clickimg.innerHTML = `${d+e}`
         if (a+1+b+1<=6){
             getresult.innerHTML = '<h1>Tài</h1>'
-            console.log(a,b)
         } 
         if (a+1+b+1>6)
         {
             getresult.innerHTML = '<h1>Xỉu</h1>'
         }
+        // cuo
+            
+            
+   
+
+        //1.  lấy giá trị trong thẻ input người dùng nhập
+        var y = document.getElementById("txt_y").value;
+        y = parseFloat(y);
+        //3. tính toán
+        if(y>100000){
+            alert('Cược đúng số tiền mày có đi')
+        }
+        if(x<=0){
+            alert('Reload lại trang để chơi tiếp nhé mấy con nghiện')
+        }
+        if(tai == '<h1>Tài</h1>'){
+        if(tai == getresult.innerHTML){
+            document.querySelector('.tiencuaban').innerHTML = `<p class="tiencuaban">
+            số tiền của bạn: ${x+=y}
+            </p>`;       
+         }
+         else {
+            
+            document.querySelector('.tiencuaban').innerHTML = `<p class="tiencuaban">
+            số tiền của bạn: ${x-=y}
+            </p>`;
+        }
+    }if(xui == '<h1>Xỉu</h1>'){
+
+        if (xui == getresult.innerHTML){   
+           document.querySelector('.tiencuaban').innerHTML = `<p class="tiencuaban">
+           số tiền của bạn: ${x+=y}
+           </p>`;
+        } else {
+           
+           document.querySelector('.tiencuaban').innerHTML = `<p class="tiencuaban">
+           số tiền của bạn: ${x-=y}
+           </p>`;
+       }
+    }
 }
 
+           
 
 
