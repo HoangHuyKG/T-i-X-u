@@ -81,6 +81,7 @@ var getresult = document.querySelector('.ketqua')
         //3. tính toán
         if(y>x){
             alert('Cược đúng số tiền mày có đi')
+            location.reload()
         }
         if(x<=0){
             alert('Reload lại trang để chơi tiếp nhé mấy con nghiện')
